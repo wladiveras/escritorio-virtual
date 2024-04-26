@@ -1,0 +1,12 @@
+
+@use '_vars';
+
+.w-border {
+  @include w-border;
+}
+
+.w-border-debug {
+  @include w-border-debug;
+
+  background-color: $dandy;
+}

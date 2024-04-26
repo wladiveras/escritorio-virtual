@@ -1,0 +1,79 @@
+{
+  "welcome": "Bem vindo",
+  "header": {
+    "services": "Serviços",
+    "plans": "Planos",
+    "recommendations": "Recomendações",
+    "faq": "FAQ",
+    "signout": "Sair",
+    "signout_loading": "Saindo ...",
+    "sigin_loading": "Entrando...",
+    "sigin": "Entrar",
+    "promotion": "Promoção"
+  },
+  "login": {
+    "welcome": "Seja bem vindo(a).",
+    "starts_with_email": "Vamos começar com seu email",
+    "terms": {
+      "text_1": "Ao fazer login, você concorda com nossos",
+      "text_2": "Termos de Serviço"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Informe seu email",
+      "error": "Informe um email válido."
+    },
+    "signin_with_google": "Continue com Google"
+  },
+  "confirm": {
+    "waiting_response": "Aguardando resposta..."
+  },
+  "dashboard": {
+    "layout": {
+      "links": {
+        "home": "Inicio",
+        "inbox": "Inbox",
+        "users": "Equipe",
+        "settings": "Configurações",
+        "general": "Geral",
+        "notifications": "Notificações",
+        "members": "Clientes",
+        "footer": {
+          "invite": "Convide alguém",
+          "support": "Ajuda & Suporte",
+          "goto": "Vá para",
+          "signed_by": "Conectado como"
+        },
+        "commands": "Comandos",
+        "sales": "Pedidos",
+        "leads": "Leads",
+        "subscriptions": "Assinaturas",
+        "services": "Serviços",
+        "panel": "Painel"
+      },
+      "periods": {
+        "weekly": "Semanal",
+        "monthly": "Mensal",
+        "daily": "Diário"
+      }
+    },
+    "search": "Pesquisar algo...",
+    "sales": {
+      "recent": {
+        "title": "Vendas recentes",
+        "description": "Você vendeu {total} esse mês."
+      }
+    },
+    "revenue": "Receita",
+    "services": {
+      "title": "Assinaturas e Serviços mais vendidos",
+      "description": "Você tem atualmente {subscriptions} assinaturas ativas e vendeu {services} serviços no total."
+    },
+    "title": "Dashboard",
+    "notification": "Notificações"
+  },
+  "plans": {
+    "month": "Mensal",
+    "year": "Anual"
+  }
+}

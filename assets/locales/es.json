@@ -1,0 +1,79 @@
+{
+  "welcome": "Ben Venido",
+  "header": {
+    "services": "servicios",
+    "plans": "Planes",
+    "recommendations": "Recomendaciones",
+    "faq": "FAQ",
+    "sigin_loading": "Entrando...",
+    "sigin": "Entrar",
+    "signout_loading": "Partida ...",
+    "signout": "Salir",
+    "promotion": "Promoción"
+  },
+  "login": {
+    "welcome": "Bienvenido.",
+    "starts_with_email": "Empecemos con tu correo electrónico.",
+    "terms": {
+      "text_1": "Ao fazer login, você concorda com nossos",
+      "text_2": "Termos de Serviço"
+    },
+    "email": {
+      "error": "Introduzca un correo electrónico válido.",
+      "placeholder": "Introduce tu correo electrónico",
+      "label": "Correo electrónico"
+    },
+    "signin_with_google": "Continuar con Google"
+  },
+  "confirm": {
+    "waiting_response": "Esperando respuesta..."
+  },
+  "dashboard": {
+    "layout": {
+      "links": {
+        "home": "Comenzar",
+        "inbox": "Inbox",
+        "users": "Equipo",
+        "settings": "ajustes",
+        "members": "Clientes",
+        "notifications": "Notificaciones",
+        "general": "General",
+        "footer": {
+          "invite": "Invita a alguien",
+          "support": "Ayuda",
+          "goto": "Ir a",
+          "signed_by": "Conectado como"
+        },
+        "commands": "Comandos",
+        "sales": "Peticiones",
+        "leads": "Dirige",
+        "panel": "Panel",
+        "services": "servicios",
+        "subscriptions": "Suscripciones"
+      },
+      "periods": {
+        "weekly": "Semanalmente",
+        "monthly": "Mensual",
+        "daily": "A diario"
+      }
+    },
+    "search": "Busca algo...",
+    "sales": {
+      "recent": {
+        "title": "Ventas recientes",
+        "description": "Hiciste {total} ventas este mes."
+      }
+    },
+    "revenue": "Ganancia",
+    "services": {
+      "description": "Actualmente tienes {subscriptions} suscripciones activas y has vendido {services} servicios en total.",
+      "title": "Suscripciones y servicios más vendidos"
+    },
+    "title": "Panel",
+    "notification": "Notificaciones"
+  },
+  "plans": {
+    "month": "Mensual",
+    "year": "Anual"
+  }
+}
