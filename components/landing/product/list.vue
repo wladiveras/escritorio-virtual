@@ -89,7 +89,7 @@ const products = [
       <UCard
         v-motion-pop-visible
         v-for="product in products"
-        :key="product.key"
+        :key="product.name"
       >
         <UBlogPost
           @click="isOpen = true"
