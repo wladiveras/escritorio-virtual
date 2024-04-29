@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   extends: ["@nuxt/ui-pro"],
   modules: [
-    "@nuxt/content",
     "@nuxt/ui",
     "@nuxtjs/fontaine",
     "@nuxtjs/google-fonts",
@@ -16,6 +15,7 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "@nuxtjs/turnstile",
     "@nuxt/image",
+    "@nuxt/content"
   ],
   turnstile: {
     siteKey: process.env.TURNSTILE_SITE_KEY,
