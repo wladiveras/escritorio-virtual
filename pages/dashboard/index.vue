@@ -1,12 +1,14 @@
 <script setup lang="ts">
 const { $storage } = useNuxtApp();
 const { t } = useI18n();
-const user = useSupabaseUser();
+const Auth = useAuthStore();
 
 definePageMeta({
   layout: "dashboard",
   middleware: "auth",
 });
+
+const { user } = Auth;
 
 const carouselRef = ref();
 
@@ -34,7 +36,7 @@ const { isNotificationsSlideoverOpen } = useDashboard();
         <template #title>
           Olá
           {{
-            user?.user_metadata?.name ||
+            user?.name ||
             "Pessoa. Você precisa configurar seu perfil para começar a vender."
           }}
         </template>

@@ -1,7 +1,11 @@
 <script lang="ts" setup>
 const isLoading = ref(true);
 const config = useRuntimeConfig();
+const user = useSupabaseUser();
+const Auth = useAuthStore();
+
 onMounted(() => {
+  Auth.getUserData();
   isLoading.value = false;
 });
 

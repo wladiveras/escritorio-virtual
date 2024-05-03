@@ -6,8 +6,10 @@ useHead({
 });
 
 const isLoading = ref(true);
+const Auth = useAuthStore();
 
 onMounted(() => {
+  Auth.getUserData();
   isLoading.value = false;
 });
 </script>

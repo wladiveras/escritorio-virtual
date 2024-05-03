@@ -3,8 +3,9 @@ const { isHelpSlideoverOpen } = useDashboard();
 const { isDashboardSearchModalOpen } = useUIState();
 const { metaSymbol } = useShortcuts();
 const { t } = useI18n();
+const Auth = useAuthStore();
 
-const user = useSupabaseUser();
+const { user } = Auth;
 
 const items = computed(() => [
   [
@@ -64,11 +65,11 @@ const items = computed(() => [
         color="gray"
         variant="ghost"
         class="w-full"
-        :label="user?.user_metadata?.name"
+        :label="user?.name"
         :class="[open && 'bg-gray-50 dark:bg-gray-800']"
       >
         <template #leading>
-          <UAvatar :src="user?.user_metadata?.avatar_url ?? ''" size="2xs" />
+          <UAvatar :src="user?.avatar ?? ''" size="2xs" />
         </template>
 
         <template #trailing>
@@ -83,7 +84,7 @@ const items = computed(() => [
           {{ t("dashboard.layout.links.footer.signed_by") }}
         </p>
         <p class="truncate font-medium text-gray-900 dark:text-white">
-          {{ user?.user_metadata?.email }}
+          {{ user?.email }}
         </p>
       </div>
     </template>

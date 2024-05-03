@@ -39,11 +39,13 @@ const user = useSupabaseUser();
 const toast = useToast();
 const { t } = useI18n();
 const email = ref("");
+const Auth = useAuthStore();
 
 watch(
   user,
   () => {
     if (user.value) {
+      Auth.loadUserData();
       return navigateTo("/dashboard");
     }
   },

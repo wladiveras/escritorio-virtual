@@ -3,9 +3,13 @@ const appConfig = useAppConfig();
 const { isHelpSlideoverOpen } = useDashboard();
 const { t } = useI18n();
 
+const user = useSupabaseUser();
 const isLoading = ref(true);
 
+const Auth = useAuthStore();
+
 onMounted(() => {
+  Auth.getUserData();
   isLoading.value = false;
 });
 
@@ -14,7 +18,7 @@ const links = reactive([
     id: "Dashboard",
     label: "Dashboard",
     icon: "i-heroicons-home",
-    to: "/",
+    to: "/dashboard",
     tooltip: {
       text: t("dashboard.layout.links.home"),
       shortcuts: ["G", "H"],
@@ -24,7 +28,7 @@ const links = reactive([
     id: "Produtos",
     label: "Vendas",
     icon: "iconoir:home-sale",
-    to: "/orders",
+    to: "/Products",
     tooltip: {
       text: t("dashboard.layout.links.users"),
       shortcuts: ["G", "O"],
@@ -34,7 +38,7 @@ const links = reactive([
     id: "afiliate",
     label: "Afiliados",
     icon: "i-heroicons-user-group",
-    to: "/dashboard/users",
+    to: "/dashboard/users/sent",
     tooltip: {
       text: t("dashboard.layout.links.users"),
       shortcuts: ["G", "U"],
@@ -42,12 +46,12 @@ const links = reactive([
     children: [
       {
         label: "Solicitações enviadas",
-        to: "/users",
+        to: "/dashboard/users/sent",
         exact: true,
       },
       {
         label: "Solicitações recebidas",
-        to: "/users/leads",
+        to: "/dashboard/users/received",
       },
     ],
   },
@@ -55,7 +59,7 @@ const links = reactive([
     id: "",
     label: "Logistica",
     icon: "i-heroicons-user-group",
-    to: "/wwww",
+    to: "/shipping",
     tooltip: {
       text: t("dashboard.layout.links.users"),
       shortcuts: ["G", "U"],
@@ -63,15 +67,19 @@ const links = reactive([
     children: [
       {
         label: "Frete",
-        to: "/users",
+        to: "/dashboard/shipping",
         exact: true,
+      },
+      {
+        label: "Produtos",
+        to: "/dashboard/products",
       },
     ],
   },
   {
     id: "settings",
     label: t("dashboard.layout.links.settings"),
-    to: "/settings",
+    to: "/dashboard/settings",
     icon: "i-heroicons-cog-8-tooth",
     tooltip: {
       text: t("dashboard.layout.links.settings"),

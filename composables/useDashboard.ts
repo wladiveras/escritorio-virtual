@@ -7,9 +7,9 @@ const _useDashboard = () => {
   const isNotificationsSlideoverOpen = ref(false);
 
   defineShortcuts({
-    "g-h": () => router.push("/"),
+    "g-h": () => router.push("/dashboard"),
     "g-i": () => router.push("/inbox"),
-    "g-u": () => router.push("/users"),
+    "g-u": () => router.push("/affiliate"),
     "g-s": () => router.push("/settings"),
     "?": () => (isHelpSlideoverOpen.value = true),
     n: () => (isNotificationsSlideoverOpen.value = true),
@@ -27,6 +27,6 @@ const _useDashboard = () => {
     isHelpSlideoverOpen,
     isNotificationsSlideoverOpen,
   };
-}
+};
 
 export const useDashboard = createSharedComposable(_useDashboard);

@@ -7,7 +7,11 @@ useHead({
 
 const isLoading = ref(true);
 
+const user = useSupabaseUser();
+const Auth = useAuthStore();
+
 onMounted(() => {
+  Auth.getUserData();
   isLoading.value = false;
 });
 </script>
