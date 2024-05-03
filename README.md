@@ -2,7 +2,7 @@
 
 A powerful afialiate product ERP system that you can customize and add all your products  campaign in action.
 
-![fintech](https://i.imgur.com/dXriMYn.png)
+![fintech](https://i.imgur.com/8DybmEe.png)
 
 ## Setup
 
