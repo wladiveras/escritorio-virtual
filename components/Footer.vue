@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const name = ref("Beleza Natural");
+const name = ref("Escritorio Digital");
 
 const links = [
   {

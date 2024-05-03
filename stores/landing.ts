@@ -5,10 +5,8 @@ export const useLandingStore = defineStore("landing", {
     return {
       isLoading: false,
       header: {
-        title:
-          "Descubra a Beleza em Cada Caixa Assinaturas Personalizadas para Você",
-        description:
-          "Você está pronto para elevar sua rotina de beleza a um novo patamar? oferecemos uma experiência única e personalizada que vai revolucionar sua maneira de cuidar de si mesmo.",
+        title: "Escritorio Online - Para quem busca praticidade e eficiência",
+        description: "Tudo que você precisa em um só lugar..",
         content: {
           type: "carousel",
           src: "https://www.youtube.com/embed/hf1iUqZc4lc?si=Ft1nA9pjI710pjGX",

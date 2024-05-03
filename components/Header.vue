@@ -4,7 +4,7 @@ const { t } = useI18n();
 const nuxtApp = useNuxtApp();
 const { activeHeadings, updateHeadings } = useScrollspy();
 
-const name = ref("Beleza Natural");
+const name = ref("Escritório Virtual");
 
 const links = computed(() => [
   {
@@ -72,9 +72,14 @@ const handleLogout = async () => {
 <template>
   <UHeader :links="links" class="lg:!border-transparent">
     <template #logo>
-      <div v-motion-pop-visible>
+      <div v-motion-pop-visible class="flex">
+        <img
+          src="/favicon.png"
+          width="18px"
+          height="18px"
+          class="relative mr-[5px]"
+        />
         {{ name }}
-        <UBadge label="premium" variant="subtle" class="mb-0.5" />
       </div>
     </template>
 

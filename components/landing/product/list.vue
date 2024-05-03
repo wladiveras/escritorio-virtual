@@ -82,7 +82,7 @@ const products = [
     produtor: "Sonhar",
     amount: "120,99 a 500,99",
     image: "/products/9.png",
-    temp: 140,
+    temp: 150,
   },
 ];
 
@@ -154,22 +154,22 @@ function resolveColor(temp: number) {
                       v-if="product.temp < 40"
                       class="text-blue-500 text-nowrap"
                     >
-                      Too cold!
+                      ❄️ Muito frio!
                     </span>
                     <span
                       v-else-if="product.temp < 70"
                       class="text-amber-500 text-nowrap"
                     >
-                      Warm
+                      💧 Morno!
                     </span>
                     <span
                       v-else-if="product.temp < 100"
                       class="text-orange-500 text-nowrap"
                     >
-                      Hot
+                      ⚡ Quente!
                     </span>
                     <span v-else class="text-red-500 font-bold text-nowrap">
-                      🔥 Too hot!
+                      🔥 Em alta!
                     </span>
                   </div>
                 </template>
