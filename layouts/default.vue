@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 const isLoading = ref(true);
-
+const config = useRuntimeConfig();
 onMounted(() => {
   isLoading.value = false;
-})
+});
 
 const page = reactive({
-  title: "Beleza Natural",
-  description: "A beleza que é natural",
+  title: config.public.name,
+  description: "Seu escritorio de vendas online",
 });
 
 useSeoMeta({

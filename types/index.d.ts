@@ -20,6 +20,20 @@ export interface Mail {
   date: string;
 }
 
+export interface IUser {
+  id: number;
+  name: string;
+  email: string;
+  phone: string;
+  document: string;
+}
+
+export interface IAuthState {
+  isLoading: boolean;
+  token: string;
+  user: IUser;
+}
+
 export interface Member {
   name: string;
   username: string;
@@ -150,6 +164,12 @@ interface IFaq {
 interface IFaqItem {
   label: string;
   content: string;
+}
+
+interface IAuthState {
+  isLoading: boolean;
+  token: string | "";
+  user: IUser;
 }
 
 interface IOrderState {

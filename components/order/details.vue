@@ -39,7 +39,7 @@ const props = defineProps({
                 />
               </h1>
               <p class="text-sm text-gray-600 dark:text-gray-400">
-                Produzido por Wladi Granger
+                Produzido por Sonhar
               </p>
               <p class="text-3xl font-bold text-primary">RS$ 120,99</p>
               <p class="text-sm text-primary">

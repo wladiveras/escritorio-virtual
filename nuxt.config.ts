@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "@nuxtjs/turnstile",
     "@nuxt/image",
-    "@nuxt/content"
+    "@nuxt/content",
   ],
   turnstile: {
     siteKey: process.env.TURNSTILE_SITE_KEY,
@@ -52,7 +52,7 @@ export default defineNuxtConfig({
       siteKey: process.env.TURNSTILE_SITE_KEY,
     },
     public: {
-      name: process.env.APP_NAME || "Only do Cash",
+      name: process.env.APP_NAME || "Escritorio Online",
       baseUrl: process.env.BASE_URL || "http://localhost:3000",
       motion: {
         directives: {
@@ -139,7 +139,7 @@ export default defineNuxtConfig({
     base64: true,
     download: true,
     families: {
-      "Mulish:ital": [400, 500, 600, 700],
+      Mulish: [400, 500, 600, 700],
     },
   },
   devtools: {

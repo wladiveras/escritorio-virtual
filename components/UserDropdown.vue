@@ -4,13 +4,7 @@ const { isDashboardSearchModalOpen } = useUIState();
 const { metaSymbol } = useShortcuts();
 const { t } = useI18n();
 
-const user = {
-  email: "wladi.com.br",
-  user_metadata: {
-    full_name: "Wladi",
-    avatar_url: "https://avatars.githubusercontent.com/u/1013389?v=4",
-  },
-};
+const user = useSupabaseUser();
 
 const items = computed(() => [
   [
@@ -70,11 +64,11 @@ const items = computed(() => [
         color="gray"
         variant="ghost"
         class="w-full"
-        :label="user.user_metadata?.full_name"
+        :label="user?.user_metadata?.name"
         :class="[open && 'bg-gray-50 dark:bg-gray-800']"
       >
         <template #leading>
-          <UAvatar :src="user.user_metadata?.avatar_url ?? ''" size="2xs" />
+          <UAvatar :src="user?.user_metadata?.avatar_url ?? ''" size="2xs" />
         </template>
 
         <template #trailing>
@@ -89,7 +83,7 @@ const items = computed(() => [
           {{ t("dashboard.layout.links.footer.signed_by") }}
         </p>
         <p class="truncate font-medium text-gray-900 dark:text-white">
-          {{ user.email }}
+          {{ user?.user_metadata?.email }}
         </p>
       </div>
     </template>

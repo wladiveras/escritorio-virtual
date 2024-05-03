@@ -32,16 +32,19 @@
 </template>
 
 <script lang="ts" setup>
+import type { FormError } from "#ui/types";
+
 const supabase = useSupabaseClient();
 const user = useSupabaseUser();
 const toast = useToast();
 const { t } = useI18n();
+const email = ref("");
 
 watch(
   user,
   () => {
     if (user.value) {
-      return navigateTo("/");
+      return navigateTo("/dashboard");
     }
   },
   { immediate: true },
@@ -57,11 +60,11 @@ const fields = [
 ];
 
 const validate = (state: any) => {
-  const errors = [];
+  const errors: FormError[] = [];
   if (!state.email)
     errors.push({ path: "email", message: t("login.email.error") });
   return errors;
-}
+};
 
 const redirectTo = `${useRuntimeConfig().public.baseUrl}/confirm`;
 
@@ -101,6 +104,7 @@ async function onSubmit(data: any) {
       shouldCreateUser: true,
     },
   });
+
   if (error) console.log(error);
 }
 </script>
