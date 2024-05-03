@@ -21,11 +21,13 @@ export interface Mail {
 }
 
 export interface IUser {
-  id: number;
+  id: string;
   name: string;
   email: string;
+  email_verified: boolean;
   phone: string;
   document: string;
+  avatar: string;
 }
 
 export interface IAuthState {
