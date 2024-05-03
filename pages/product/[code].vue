@@ -7,6 +7,8 @@ definePageMeta({
 const route = useRoute();
 const { t } = useI18n();
 const { isNotificationsSlideoverOpen } = useDashboard();
+const Auth = useAuthStore();
+const { user } = Auth;
 
 const product = {
   name: "Spray Termico",
@@ -16,29 +18,34 @@ const product = {
   amount: "120,99 a 500,99",
   image: "/products/9.png",
   temp: 140,
+  description: `
+  Página de venda: https://audionex.com.br/
+
+Tipo de comissionamento: Último Clique
+
+Preço: R$ 197,00 a R$ 697,00
+
+Comissão dos afiliados: 50,00%
+`,
 };
 
 const links = [
   {
-    label: "Home",
+    label: "dashboard",
     icon: "i-heroicons-home",
-    to: "/",
+    to: "/dashboard",
   },
   {
     label: "Detalhes",
     icon: "i-heroicons-information-circle",
   },
 ];
-
-/**
- * Define head properties
- */
 useHead({
-  title: `${product.name} | Produto`,
+  title: `${product.name} | Escritório Online`,
   meta: [
     {
       name: "description",
-      content: "My amazing site.",
+      content: `${product.name} | Escritório Online`,
     },
   ],
 });
@@ -51,7 +58,7 @@ useHead({
   >
     <UDashboardPanel grow>
       <!-- Navbar -->
-      <UDashboardNavbar title="Olá, Wladi Veras">
+      <UDashboardNavbar :title="user.name">
         <template #right>
           <ToggleLocation size="sm" />
           <UColorModeButton size="sm" />
@@ -101,14 +108,25 @@ useHead({
           </template>
 
           <UBlogPost
-            :title="product.name"
-            :description="product.category"
             orientation="horizontal"
             :image="{
               src: product.image,
               alt: `imagem do produto: ${product.name}`,
             }"
-          />
+          >
+            <template #default>
+              <div class="relative">
+                <div>
+                  <b class="text-3xl">{{ product.name }}</b>
+                  <p>{{ product.category }}</p>
+                  <br />
+                  <p>{{ product.description }}</p>
+
+                  <UButton></UButton>
+                </div>
+              </div>
+            </template>
+          </UBlogPost>
 
           <template #footer>
             <Placeholder class="h-8" />

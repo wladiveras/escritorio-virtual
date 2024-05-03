@@ -33,13 +33,7 @@ const { isNotificationsSlideoverOpen } = useDashboard();
   <UDashboardPage>
     <UDashboardPanel grow>
       <UDashboardNavbar>
-        <template #title>
-          Olá
-          {{
-            user?.name ||
-            "Pessoa. Você precisa configurar seu perfil para começar a vender."
-          }}
-        </template>
+        <template #title> Olá, {{ user.name }} </template>
         <template #right>
           <ToggleLocation size="sm" />
           <UColorModeButton size="sm" />
@@ -74,47 +68,45 @@ const { isNotificationsSlideoverOpen } = useDashboard();
 
       <UDashboardPanelContent>
         <a href="#" class="cursor-pointer">
-          <div class="banner-recommendation mb-10 rounded">
-            <UCarousel
-              ref="carouselRef"
-              v-slot="{ item }"
-              :items="items"
-              :ui="{ item: 'basis-full' }"
-              class="rounded-lg overflow-hidden"
-              indicators
-            >
-              <img :src="item" class="w-full" draggable="false" />
-            </UCarousel>
-          </div>
+          <UCarousel
+            ref="carouselRef"
+            v-slot="{ item }"
+            :items="items"
+            :ui="{ item: 'basis-full' }"
+            class="rounded-lg overflow-hidden mb-10"
+            indicators
+          >
+            <img :src="item" class="w-full" draggable="false" />
+          </UCarousel>
         </a>
 
-        <div class="flex gap-10 pb-10 w-full">
+        <div class="flex flex-col md:flex-row gap-10 pb-10 w-full">
           <UCard class="w-full p-1">
             <p class="text-base font-bold pb-2">Total das vendas</p>
             <p class="text-3xl font-bold text-sky-500">R$ 0,00</p>
 
             <template #footer>
               <div class="flex">
-                <div class="flex justify-between">
-                  <div class="flex text-base">
+                <div class="flex flex-col md:flex-row justify-between w-full">
+                  <p class="text-base">
                     Quantidade de vendas: <span class="text-sky-500">0</span>
-                  </div>
-                  <div class="flex text-base">
+                  </p>
+                  <p class="text-base">
                     Tícket médio vendas:
                     <span class="text-yellow-600">R$ 0,00</span>
-                  </div>
+                  </p>
                 </div>
               </div>
             </template>
           </UCard>
 
           <UCard class="w-full">
-            <p class="text-base font-bold pb-2">Total das vendas</p>
+            <p class="text-base font-bold pb-2">Total das comissões</p>
             <p class="text-3xl font-bold text-green-500">R$ 0,00</p>
 
             <template #footer>
               <div class="flex">
-                <div class="flex justify-between w-full">
+                <div class="flex flex-col md:flex-row justify-between w-full">
                   <p class="text-base">
                     Tícket médio comissões:
                     <span class="text-yellow-600">R$ 0,00</span>
