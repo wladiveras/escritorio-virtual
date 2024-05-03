@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const { $storage } = useNuxtApp();
-
 const { t } = useI18n();
 
 definePageMeta({
