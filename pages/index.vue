@@ -20,14 +20,17 @@ const user = useSupabaseUser();
   justify-content: center;
   align-items: center;
 }
+
 .image-text {
   width: 85%;
 }
+
 .image-logo {
   width: 90px;
   position: absolute;
   right: 50px;
 }
+
 .wrapper-center,
 .wrapper-right {
   display: flex;
