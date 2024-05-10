@@ -21,10 +21,16 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
+Now install pnpm:
+
+```bash
+npm i -g pnpm
+```
+
 Now, you can install a specific version of Node.js using NVM. For example, to install Node.js 21, you would use:
 
 ```bash
-nvm install 21
+nvm install 20
 ```
 
 You can switch between installed Node versions with:
