@@ -8,33 +8,21 @@ const name = ref("Escritório Virtual");
 
 const links = computed(() => [
   {
-    label: t("header.services"),
-    to: "#features",
+    label: 'Dashboard',
+    to: "Dashboard",
     icon: "i-heroicons-cube-transparent",
     active:
       activeHeadings.value.includes("features") &&
       !activeHeadings.value.includes("pricing"),
   },
-  {
-    label: t("header.plans"),
-    to: "#pricing",
-    icon: "i-heroicons-credit-card",
-    active:
-      activeHeadings.value.includes("pricing") &&
-      !activeHeadings.value.includes("testimonials"),
-  },
+
   {
     label: t("header.recommendations"),
     to: "#testimonials",
     icon: "i-heroicons-academic-cap",
     active: activeHeadings.value.includes("testimonials"),
   },
-  {
-    label: t("header.promotion"),
-    to: "#promotion",
-    icon: "i-heroicons-academic-cap",
-    active: activeHeadings.value.includes("promotion"),
-  },
+
   {
     label: t("header.faq"),
     to: "#faq",
@@ -45,10 +33,7 @@ const links = computed(() => [
 
 nuxtApp.hooks.hookOnce("page:finish", () => {
   updateHeadings([
-    document.querySelector("#features")!,
-    document.querySelector("#pricing")!,
     document.querySelector("#testimonials")!,
-    document.querySelector("#promotion")!,
     document.querySelector("#faq")!,
   ]);
 });
