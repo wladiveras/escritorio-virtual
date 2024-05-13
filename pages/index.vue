@@ -7,7 +7,15 @@ definePageMeta({
 const user = useSupabaseUser();
 </script>
 
-<template>{{ user }}</template>
+<template>
+  <UContainer>
+    <LandingHeader />
+    <LandingLogos />
+    <LandingTestemonial />
+    <LandingFaq />
+  </UContainer>
+
+</template>
 
 <style lang="scss" scoped>
 .w-content {

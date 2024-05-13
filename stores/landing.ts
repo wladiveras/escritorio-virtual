@@ -5,8 +5,8 @@ export const useLandingStore = defineStore("landing", {
     return {
       isLoading: false,
       header: {
-        title: "Escritorio Online - Para quem busca praticidade e eficiência",
-        description: "Tudo que você precisa em um só lugar..",
+        title: "Escritório Online",
+        description: "Para quem busca praticidade e eficiência Tudo que você precisa em um só lugar..",
         content: {
           type: "carousel",
           src: "https://www.youtube.com/embed/hf1iUqZc4lc?si=Ft1nA9pjI710pjGX",
@@ -37,44 +37,44 @@ export const useLandingStore = defineStore("landing", {
         headline: "Serviços",
         items: [
           {
-            title: "Consultoria de Skincare Personalizada",
+            title: "Escritório Virtual de Afiliados",
             description:
-              "Obtenha uma pele radiante com nossa consultoria de skincare personalizada. Nossos especialistas analisam seu tipo de pele, preocupações específicas e estilo de vida para criar um plano único com recomendações de produtos e rotinas ideais.",
+              "Tenha acesso a um escritório virtual completo, com endereço comercial, atendimento telefônico personalizado, gerenciamento de correspondências e muito mais. Aumente sua credibilidade e eficiência com nossos serviços de escritório virtual de afiliados.",
             icon: "line-md:confirm",
             to: "/order/checkout",
           },
           {
-            title: "Maquiagem Profissional para Eventos Especiais",
+            title: "Afiliação",
             description:
-              "Destaque-se em seu próximo evento com nossa maquiagem profissional. Nossos artistas de maquiagem colaboram com você para criar um visual perfeito que realça sua beleza natural e combina com seu estilo pessoal.",
+              "Afiliando-se ao nosso serviço de escritório virtual, você pode vender produtos e aproveitar benefícios exclusivos, como descontos em serviços, eventos de networking e oportunidades de negócios.",
             icon: "line-md:confirm",
             to: "/order/checkout",
           },
           {
-            title: "Tratamento Capilar de Luxo",
+            title: "Sala de Reunião",
             description:
-              "Mime seus cabelos com nosso tratamento capilar de luxo. Usando produtos premium e técnicas avançadas, restauramos a saúde e a vitalidade dos seus fios, deixando-os macios, brilhantes e irresistíveis.",
+              "Realize reuniões e apresentações de alto nível em nossas salas de reunião modernas e bem equipadas. Oferecemos espaços confortáveis e profissionais para atender às suas necessidades de negócios.",
             icon: "line-md:confirm",
             to: "/order/checkout",
           },
           {
-            title: "Massagem Relaxante e Terapêutica",
+            title: "Coworking",
             description:
-              "Relaxe completamente com nossa massagem relaxante e terapêutica. Nossos terapeutas especializados aliviam a tensão muscular, reduzem o estresse e promovem o bem-estar físico e mental.",
+              "Trabalhe em um ambiente colaborativo e inspirador com nossa opção de coworking. Conheça outros profissionais, compartilhe ideias e aproveite a flexibilidade de um espaço de trabalho compartilhado.",
             icon: "line-md:confirm",
             to: "/order/checkout",
           },
           {
-            title: "Tratamento Facial Anti-idade Avançado",
+            title: "Serviços de Secretariado",
             description:
-              "Desafie os sinais do envelhecimento com nosso tratamento facial anti-idade. Utilizamos tecnologias inovadoras e ingredientes potentes para rejuvenescer e revitalizar sua pele, proporcionando uma aparência mais jovem e firme.",
+              "Conte com nossos serviços de secretariado para ajudar na organização e administração do seu negócio. Nossos profissionais qualificados estão prontos para fornecer suporte administrativo e garantir o bom funcionamento do seu escritório.",
             icon: "line-md:confirm",
             to: "/order/checkout",
           },
           {
-            title: "Manicure Deluxe - Unhas Perfeitas e Deslumbrantes",
+            title: "Suporte Técnico",
             description:
-              "Experimente o luxo da nossa manicure de alta qualidade. Deixe nossos especialistas cuidarem das suas unhas, proporcionando-lhes um tratamento especial desde a modelagem até a aplicação do esmalte. Saia com unhas impecáveis e elegantes, prontas para impressionar em qualquer ocasião.",
+              "Tenha tranquilidade com nosso suporte técnico especializado. Estamos aqui para ajudá-lo a resolver qualquer problema técnico que possa surgir.",
             icon: "line-md:confirm",
             to: "/order/checkout",
           },
@@ -109,7 +109,7 @@ export const useLandingStore = defineStore("landing", {
           {
             title: "Box Plus",
             description:
-              "O favorito de nossos clientes.Um plano para aqueles que desejam algo a mais, com excelente custo- benefício.",
+              "O favorito de nossos clientes. Um plano para aqueles que desejam algo a mais, com excelente custo-benefício.",
             price: "$RS 90.99",
             align: "top",
             highlight: true,
@@ -143,7 +143,7 @@ export const useLandingStore = defineStore("landing", {
             },
             features: [
               "4 a 5 produtos de beleza de luxo",
-              "3 itens de bem-estar de alta qualidade da sua escola",
+              "3 itens de bem-estar de alta qualidade da sua escolha",
               "Acessórios de edição limitada",
               "Brinde especial mensal",
               "Entrega prioritária com seguro",
@@ -155,7 +155,7 @@ export const useLandingStore = defineStore("landing", {
         headline: "Depoimentos",
         title: "O Que Nossos Clientes Dizem",
         description:
-          "Veja o que nossos clientes têm a dizer sobre nós. Suas palavras refletem nossa dedicação em fornecer serviços excepcionais e resultados impressionantes. Confira abaixo e descubra por que somos a escolha confiável para suas necessidades de beleza e bem-estar.",
+          "Veja o que nossos clientes têm a dizer sobre nós. Suas palavras refletem nossa dedicação em fornecer serviços excepcionais e resultados impressionantes. Confira abaixo e descubra por que somos a escolha confiável para suas necessidades.",
         items: [
           {
             quote:
@@ -208,9 +208,9 @@ export const useLandingStore = defineStore("landing", {
         ],
       },
       promotion: {
-        title: "Box Premium",
+        title: "Escritório Virtual de Afiliados",
         description:
-          "Descubra o ápice do luxo com nosso Box Premium por R$ 120/mês. Receba de 4 a 5 produtos de beleza de marcas renomadas, junto com 3 itens de bem-estar selecionados para relaxamento. Além disso, incluímos acessórios exclusivos para aprimorar sua experiência. Com entrega prioritária, você desfrutará de indulgência mensal garantida.",
+          "Descubra o ápice do luxo com nosso Escritório Virtual de Afiliados por R$ 120/mês. Tenha acesso a um escritório virtual completo, com endereço comercial, atendimento telefônico personalizado, gerenciamento de correspondências e muito mais. Aumente sua credibilidade e eficiência com nosso escritório virtual de afiliados. Assine agora mesmo!",
         label: "Assine agora mesmo",
         path: "#pricing",
         src: "https://locaria.com/wp-content/uploads/2019/05/AdobeStock_249865970-1024x683.jpeg",
@@ -221,56 +221,54 @@ export const useLandingStore = defineStore("landing", {
           "Curiosidades? Dúvidas? Estamos aqui para ajudar! Confira nossas respostas às perguntas mais comuns sobre nossos serviços e descubra como podemos tornar sua jornada de beleza ainda mais incrível. Deixe-nos guiá-lo pelo caminho da confiança e do bem-estar.",
         items: [
           {
-            label: "O que é uma assinatura de beleza?",
+            label: "O que é um escritório virtual de afiliados?",
             content:
-              "Uma assinatura de beleza é um serviço que oferece uma seleção de produtos de beleza entregues regularmente, geralmente mensalmente, trimestralmente ou anualmente, diretamente na sua porta. Esses produtos podem incluir itens de skincare, maquiagem, cabelo, fragrâncias e muito mais.",
+              "Um escritório virtual de afiliados é um serviço que oferece uma variedade de recursos e suporte para profissionais e empreendedores afiliados. Com um escritório virtual de afiliados, você pode ter um endereço comercial, atendimento telefônico personalizado, gerenciamento de correspondências e outras facilidades, sem a necessidade de um espaço físico.",
           },
           {
-            label: "Como funcionam as assinaturas de beleza?",
+            label: "Como funciona a afiliação ao escritório virtual de afiliados?",
             content:
-              "Ao se inscrever em uma assinatura de beleza, você seleciona um plano de assinatura e, em seguida, recebe uma caixa com uma variedade de produtos de beleza escolhidos com cuidado por especialistas. Algumas assinaturas permitem personalizar sua caixa, enquanto outras oferecem uma seleção padrão de produtos.",
+              "Ao se afiliar ao nosso serviço de escritório virtual de afiliados, você terá acesso a todos os recursos e benefícios oferecidos. Além disso, você poderá vender produtos e aproveitar descontos em serviços, eventos de networking e oportunidades de negócios exclusivas.",
           },
           {
-            label: "Quais são os benefícios de assinar uma caixa de beleza?",
+            label: "Quais são os benefícios de ter um escritório virtual de afiliados?",
             content:
-              "Os benefícios incluem experimentar uma variedade de produtos de beleza de alta qualidade, descobrir novas marcas e tendências, economizar tempo e dinheiro, receber produtos exclusivos e brindes, além de desfrutar da conveniência de ter seus produtos favoritos entregues diretamente em sua casa.",
+              "Os benefícios de ter um escritório virtual de afiliados incluem a credibilidade de um endereço comercial, atendimento telefônico profissional, gerenciamento eficiente de correspondências, flexibilidade de trabalhar em qualquer lugar, economia de custos em comparação com um escritório físico e acesso a uma comunidade de profissionais e empreendedores.",
           },
           {
-            label: "Como posso personalizar minha assinatura de beleza?",
+            label: "Como posso me afiliar ao escritório virtual de afiliados?",
             content:
-              "Alguns serviços de assinatura permitem que você personalize sua caixa de acordo com suas preferências individuais. Isso pode incluir escolher tipos específicos de produtos, como skincare, maquiagem ou cabelo, bem como selecionar marcas ou até mesmo indicar suas preferências de cores ou fragrâncias.",
+              "Para se afiliar ao nosso serviço de escritório virtual de afiliados, basta entrar em contato conosco e fornecer as informações necessárias. Nossa equipe terá prazer em ajudá-lo com o processo de afiliação.",
           },
           {
-            label: "Posso cancelar minha assinatura a qualquer momento?",
+            label: "Quais são as opções de venda disponíveis no escritório virtual de afiliados?",
             content:
-              "Sim, a maioria das assinaturas de beleza oferece flexibilidade, permitindo que você cancele sua assinatura a qualquer momento, sem penalidades. Verifique os termos e condições específicos de cada serviço para obter detalhes sobre políticas de cancelamento e reembolso.",
+              "No escritório virtual de afiliados, você pode vender produtos ou serviços relacionados ao seu negócio. Através da afiliação, você terá acesso a recursos e suporte para impulsionar suas vendas e expandir seus negócios.",
           },
           {
-            label: "Quanto custa uma assinatura de beleza?",
+            label: "Posso cancelar minha afiliação ao escritório virtual de afiliados?",
             content:
-              "O custo de uma assinatura de beleza pode variar dependendo do serviço e do plano escolhido. Planos mensais tendem a ter preços mais baixos por caixa do que planos trimestrais ou anuais. Além disso, algumas assinaturas oferecem opções de nível de preço para se adequar ao seu orçamento.",
+              "Sim, você pode cancelar sua afiliação ao escritório virtual de afiliados a qualquer momento. Entre em contato conosco para obter mais informações sobre o processo de cancelamento.",
           },
           {
-            label:
-              "Como são selecionados os produtos incluídos em uma assinatura de beleza?",
+            label: "Quanto custa a afiliação ao escritório virtual de afiliados?",
             content:
-              "Os produtos são cuidadosamente selecionados por especialistas em beleza com base em tendências, qualidade, eficácia e preferências do cliente. Muitas assinaturas também permitem que você forneça feedback sobre os produtos recebidos para ajudar a personalizar ainda mais suas futuras caixas.",
+              "O custo da afiliação ao escritório virtual de afiliados pode variar dependendo dos recursos e benefícios incluídos. Entre em contato conosco para obter detalhes sobre os planos e preços disponíveis.",
           },
           {
-            label:
-              "As assinaturas de beleza são adequadas para todos os tipos de pele?",
+            label: "Quais são os requisitos para se afiliar ao escritório virtual de afiliados?",
             content:
-              "Sim, as assinaturas de beleza geralmente oferecem uma variedade de produtos adequados para diferentes tipos de pele, desde pele oleosa até pele sensível. Ao personalizar sua assinatura, você pode selecionar produtos específicos para atender às necessidades da sua pele.",
+              "Os requisitos para se afiliar ao escritório virtual de afiliados podem variar. Entre em contato conosco para obter informações sobre os requisitos específicos e como você pode se tornar um afiliado.",
           },
           {
-            label: "Posso presentear alguém com uma assinatura de beleza?",
+            label: "Quais são as formas de pagamento aceitas para a afiliação?",
             content:
-              "Sim, muitas assinaturas de beleza oferecem a opção de presentear amigos e familiares com caixas de assinatura. Você pode selecionar o plano e personalizar a caixa para corresponder aos gostos e preferências do destinatário, tornando-o um presente perfeito para qualquer ocasião.",
+              "Aceitamos várias formas de pagamento para a afiliação ao escritório virtual de afiliados. Entre em contato conosco para obter informações sobre as opções de pagamento disponíveis.",
           },
           {
-            label: "Como faço para começar minha assinatura de beleza?",
+            label: "Como posso obter mais informações sobre a afiliação ao escritório virtual de afiliados?",
             content:
-              "Para começar sua jornada de beleza com uma assinatura, basta escolher um serviço de assinatura confiável, selecionar o plano que melhor atenda às suas necessidades e preferências, e seguir as instruções para se inscrever. Em pouco tempo, você estará desfrutando de uma seleção exclusiva de produtos de beleza entregues diretamente na sua porta.",
+              "Para obter mais informações sobre a afiliação ao escritório virtual de afiliados, entre em contato conosco. Nossa equipe terá prazer em responder a todas as suas perguntas e fornecer os detalhes necessários.",
           },
         ],
       },
