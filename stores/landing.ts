@@ -6,7 +6,7 @@ export const useLandingStore = defineStore("landing", {
       isLoading: false,
       header: {
         title: "Escritório Online",
-        description: "Para quem busca praticidade e eficiência Tudo que você precisa em um só lugar..",
+        description: "Para quem busca praticidade e eficiência, tudo que você precisa em um só lugar..",
         content: {
           type: "carousel",
           src: "https://www.youtube.com/embed/hf1iUqZc4lc?si=Ft1nA9pjI710pjGX",
