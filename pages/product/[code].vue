@@ -232,7 +232,7 @@ useHead({
                           v-if="product[0].temp < 40"
                           class="text-blue-500 text-nowrap"
                         >
-                          ❄️ Muito frio!
+                          ❄️ Muito frio teste!
                         </span>
                         <span
                           v-else-if="product[0].temp < 70"
@@ -256,7 +256,7 @@ useHead({
                   <UAlert color="primary" variant="solid">
                     <template #description>
                       <b
-                        class="text-yellow-500 text-xl text-center w-full block"
+                        class="text-white text-xl text-center w-full block"
                       >
                         Você ganha até <b class="text-2xl">R$ 348,50</b> por
                         indicação de venda!
